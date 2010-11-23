@@ -237,6 +237,7 @@ background-position: 99% 52% !important;
 <!-- RokBox phpBB3 Code Start -->
 <!-- IF ROKBOX -->
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/rokbox/rokbox.js"></script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/mouseshowcase.js"></script>
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/rokbox/themes/<!-- IF ROKBOX_THEME -->{ROKBOX_THEME}<!-- ELSE -->light<!-- ENDIF -->/rokbox-config.js"></script>
 <link href="{T_TEMPLATE_PATH}/rokbox/themes/<!-- IF ROKBOX_THEME -->{ROKBOX_THEME}<!-- ELSE -->light<!-- ENDIF -->/rokbox-style.css" rel="stylesheet" type="text/css" media="screen, projection" />
 <!-- IF IE_VERSION eq '6' -->
@@ -318,10 +319,10 @@ window.addEvent('domready', function() {
    <div class="rt-container">
     <div id="rt-top2">
      			  <!-- IF SHOW_QUASAR_FONT -->
-        <div class="rt-grid-<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->3<!-- ELSE -->6<!-- ENDIF --> rt-omega">
+        <div class="rt-grid-<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->3<!-- ELSE -->6<!-- ENDIF -->  rt-omega">
         		<div class="rt-block">
 			<div id="rt-accessibility">
-				<div class="rt-desc">Text Size</div>
+				<div class="rt-desc">{L_TEXTSIZE}</div>
 				<div id="rt-buttons">
 <a href="#" onclick="fontsizeup(); return false;" onkeypress="fontsizeup(); return false;" title="{L_CHANGE_FONT_SIZE}" class="large"><span class="button"></span></a>
 <a href="#" onclick="fontsizedown(); return false;" onkeypress="fontsizedown(); return false;"  title="{L_CHANGE_FONT_SIZE}" class="small"><span class="button"></span></a>
@@ -343,7 +344,7 @@ window.addEvent('domready', function() {
 </div>
 <!-- ENDIF -->
   <!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-     <div class="rt-grid-4 rt-omega">
+     <div class="rt-grid-4 rt-push-5 rt-omega">
       <div class="rt-block">
        <div class="module-surround">
         <div class="module-content">
@@ -363,49 +364,52 @@ window.addEvent('domready', function() {
     </div>
    </div>
   </div>
+
   <div id="rt-header">
+	<div id="custom-header3">
+	<div id="custom-header2">
+	<div id="custom-header1">
+  
    <div class="rt-container">
     <div id="rt-header2">
      <div id="rt-header3">
       <div id="rt-header4">
-       <div class="rt-grid-2 rt-alpha">
-        <div class="rt-block">
-         <a href="<!-- IF QUASAR_LOGO_LINK -->{QUASAR_LOGO_LINK}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" id="rt-logo"></a>
-        </div>
-       </div>
-       <div class="rt-grid-10 rt-omega">
-        <div class="_menu">
+	    <div class="rt-grid-12 rt-omega"> 
+		<div class="_menu">
          <div class="rt-block">
           <div class="module-surround">
            <div class="module-icon"></div>
            <div class="module-content">
 		
 		<!-- IF ALLOW_QUASAR_COLORSWITCHER --> 
-	    <ul id="stylesw" class="menu level1">
+<ul id="stylesw" class="menu level1">
 
 		    <li class="item73 parent root" >
 			<a class="daddy item bullet " href="{U_INDEX}"  >
 			<span>
-		    			Preset Styles						  
-			   
+						{L_LIGHTNESS}
 			</span>
 		</a>
 		
 			<div class="fusion-submenu-wrapper level2">
 			<div class="drop-top"></div>
-<ul class="level2">
-<li class="item141"><a class="orphan item bullet" href="index.php?ntheme=style1"><span>Preset 1</span></a></li>
-<li class="item142"><a class="orphan item bullet" href="index.php?ntheme=style2"><span>Preset 2</span></a></li>
-<li class="item143"><a class="orphan item bullet" href="index.php?ntheme=style3"><span>Preset 3</span></a></li>
-<li class="item144"><a class="orphan item bullet" href="index.php?ntheme=style4"><span>Preset 4</span></a></li>
-<li class="item145"><a class="orphan item bullet" href="index.php?ntheme=style5"><span>Preset 5</span></a></li>
-<li class="item146"><a class="orphan item bullet" href="index.php?ntheme=style6"><span>Preset 6</span></a></li>
-</ul>
+			<ul class="level2" style="width: auto">
+			<li class="item141" style="clear:both"><a class="orphan item bullet" href="index.php?ntheme=style1"><span>{L_DARK}</span></a></li>
+			<li class="item142" style="clear:both"><a class="orphan item bullet" href="index.php?ntheme=style2"><span>{L_LIGHT}</span></a></li>
+			</ul>
 
 		</div>
+	
 		
-</li>	</ul>
-   <!-- ENDIF -->    
+		
+		
+</li>	
+</ul>
+   <!-- ENDIF --> 
+
+   
+	    <ul id="mainmenu1" class="menu level1">
+			
 		
  <!-- IF S_ALLOW_JMENU -->
                             <!-- IF S_USER_LOGGED_IN -->
@@ -426,14 +430,55 @@ window.addEvent('domready', function() {
 <!-- IF S_DISPLAY_PM --><li <!-- IF IE_VERSION neq '6' --><!-- IF U_PRIVATEMSGS_STYLE -->class="item3 active root"<!-- ELSE -->class="item3 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_PRIVATEMSGS_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_PRIVATEMSGS}"><span>{PRIVATE_MESSAGE_INFO}</span></a></li><!-- ENDIF -->
 <!-- ENDIF -->  
  
+		
+<ul id="mainmenu2" class="menu level1" style="float:left">
+
+<!-- IF S_DISPLAY_SEARCH or (S_USER_LOGGED_IN and not S_IS_BOT) -->
+<!-- IF QUASAR_MENUPOSITION eq 'full' or QUASAR_MENUPOSITION eq 'fluid' -->
+		    <li class="item73 parent root" >
+			<a class="daddy item bullet " href="{U_INDEX}"  >
+			<span>
+		    	{L_MAINMENU}
+			</span>
+		</a>
+<div class="fusion-submenu-wrapper level2">
+	<div class="drop-top"></div>
+<ul class="level2" style="width: auto">
+		<li class="item141" style="clear:both; white-space: nowrap" ><a href="{U_SEARCH_UNANSWERED}"><span>{L_SEARCH_UNANSWERED}</span></a></li>
+	<!-- IF S_USER_LOGGED_IN --> 
+		<li class="item142" style="clear:both; white-space: nowrap "><a href="{U_SEARCH_UNREAD}"><span>{L_SEARCH_UNREAD}</span></a></li>
+		<li class="item143" style="clear:both; white-space: nowrap"><a href="{U_SEARCH_NEW}"><span>{L_SEARCH_NEW}</span></a></li>
+	<!-- IF S_DISPLAY_SEARCH --> <li class="item144" style="clear:both;white-space: nowrap"><a href="{U_SEARCH_SELF}"><span>{L_SEARCH_SELF}</span></a></li> <!-- ENDIF -->
+		
+	<!-- ENDIF --> 
+		<li class="item145" style="clear:both; white-space: nowrap"><a href="{U_SEARCH_ACTIVE_TOPICS}"><span>{L_SEARCH_ACTIVE_TOPICS}</span></a></li>
+		<li class="item146" style="clear:both; white-space: nowrap"><a href="{U_MARK_FORUMS}" accesskey="m"><span>{L_MARK_FORUMS_READ}</span></a></li>
+</ul>
+</div>	
+</li>
+</ul>
+   <!-- ENDIF --> 
+   <!-- ENDIF -->
  
-<li <!-- IF IE_VERSION neq '6' --><!-- IF U_FAQ_STYLE -->class="item3 active root"<!-- ELSE -->class="item3 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_FAQ_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_FAQ}" title="{L_FAQ_EXPLAIN}"><span>{L_FAQ}</span></a></li>
-        
+ 
+
+
+			
+
+			<!-- IF S_DISPLAY_MEMBERLIST --><li <!-- IF IE_VERSION neq '6' --><!-- IF U_MEMBERLIST_STYLE -->class="item3 active root"<!-- ELSE -->class="item3 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_MEMBERLIST_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_MEMBERLIST}" title="{L_MEMBERLIST_EXPLAIN}"><span>{L_MEMBERLIST}</span></a></li><!-- ENDIF -->
+				
+<li <!-- IF IE_VERSION neq '6' --><!-- IF U_FAQ_STYLE -->class="item3 active root"<!-- ELSE -->class="item3 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_FAQ_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><!--<a class="orphan item bullet" href="{U_FAQ}" title="{L_FAQ_EXPLAIN}"><span>{L_FAQ}</span></a>--></li>        
 	<!-- IF not S_IS_BOT -->
 		     <!-- IF not S_USER_LOGGED_IN --><li <!-- IF IE_VERSION neq '6' --><!-- IF U_REGISTER_STYLE -->class="item4 active root"<!-- ELSE -->class="item4 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_REGISTER_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_REGISTER}"><span>{L_REGISTER}</span></a></li><!-- ENDIF -->
                     <li <!-- IF IE_VERSION neq '6' --><!-- IF U_LOGIN_LOGOUT_STYLE -->class="item5 active root"<!-- ELSE -->class="item5 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_LOGIN_LOGOUT_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="l"><span>{L_LOGIN_LOGOUT}</span></a></li>
                 <!-- ENDIF -->
- 
+				
+
+
+
+
+
+				
 </ul>
                     <!-- ENDIF -->
 		           </div>
@@ -441,28 +486,24 @@ window.addEvent('domready', function() {
          </div>
         </div>
        </div>
+	   <div class="rt-grid-1 rt-alpha">
+        <div class="rt-block">
+         <a href="<!-- IF QUASAR_LOGO_LINK -->{QUASAR_LOGO_LINK}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" id="rt-logo"></a>
+        </div>
+       </div>
+
+	   </div>
        <div class="clear"></div>
       </div>
      </div>
     </div>
-   </div>
+</div>
+ </div>
+</div>
   </div>
   <div id="rt-feature">
    <div class="rt-container">
     <div class="rt-grid-12 rt-alpha rt-omega"></div>
-    <div class="clear"></div>
-   </div>
-  </div>
-  <div id="rt-toptab">
-   <div class="rt-container">
-    <div class="clear"></div>
-    <div class="rt-block">
-     <div class="shadow">
-      <div class="toptab">
-       <span class="toptab2">{SITENAME}</span>
-      </div>
-     </div>
-    </div>
     <div class="clear"></div>
    </div>
   </div>
@@ -491,7 +532,8 @@ window.addEvent('domready', function() {
           </div>
 <div id="wrap">
 	<a id="top" name="top" accesskey="t"></a>
-	<div id="page-header">
+	<div id="
+	">
 
 <!-- IF QUASAR_MENUPOSITION eq 'full' or QUASAR_MENUPOSITION eq 'fluid' -->
 		<div class="navbar">
@@ -499,26 +541,13 @@ window.addEvent('domready', function() {
 			<!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
 			<ul class="linklist leftside">
 				<li class="icon-ucp">
-					<a href="{U_PROFILE}" title="{L_PROFILE}" accesskey="e">{L_PROFILE}</a>
-						<!-- IF S_DISPLAY_PM --> (<a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a>)<!-- ENDIF -->
-					<!-- IF S_DISPLAY_SEARCH --> &bull;
-					<a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a>
-					<!-- ENDIF -->
+					
 					<!-- IF U_RESTORE_PERMISSIONS --> &bull;
 					<a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a>
 					<!-- ENDIF -->
 				</li>
 			</ul>
 			<!-- ENDIF -->
-
-			<ul class="linklist rightside">
-				<li class="icon-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>
-				<!-- IF not S_IS_BOT -->
-					<!-- IF S_DISPLAY_MEMBERLIST --><li class="icon-members"><a href="{U_MEMBERLIST}" title="{L_MEMBERLIST_EXPLAIN}">{L_MEMBERLIST}</a></li><!-- ENDIF -->
-					<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) --><li class="icon-register"><a href="{U_REGISTER}">{L_REGISTER}</a></li><!-- ENDIF -->
-					<li class="icon-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x">{L_LOGIN_LOGOUT}</a></li>
-				<!-- ENDIF -->
-			</ul>
 </div>
 		</div>
 
