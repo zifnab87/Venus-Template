@@ -1,0 +1,105 @@
+<!-- PHP -->
+global $config, $template, $user;
+
+$template->assign_vars(array(               
+                'QUASAR_BG_LEVEL'	=> "{$config['quasar_bg_level']}",
+                'QUASAR_BODY_LEVEL'	=> "{$config['quasar_body_level']}",
+                'QUASAR_CSS_STYLE'	=> "{$config['quasar_css_style']}",
+                'QUASAR_LINK_COLOR'	=> "{$config['quasar_link_color']}",
+                'QUASAR_FONTFACE'	=> "{$config['quasar_fontface']}",
+               
+));
+
+
+$current_theme = $user->theme['theme_path'];	
+$easy_theme = $_GET['ntheme'];
+$bg_level = $_GET['bg_level'];
+
+if(!isset($_COOKIE[$current_theme."-tstyle"])) {
+$color_variation = $config['quasar_preset_style'];
+}
+
+if(!empty($easy_theme)) {
+	ob_start();
+	setcookie($current_theme."-tstyle", $easy_theme, time()+31536000); /* Expires in a year */
+	setcookie($current_theme."-bg_level", $bg_level, time()+31536000); /* Expires in a year */
+        header("Location: ". $_SERVER['PHP_SELF']);
+	exit;
+	ob_end_flush();
+}
+
+if(isset($_COOKIE[$current_theme."-tstyle"])) {
+	$color_variation = $_COOKIE[$current_theme."-tstyle"];
+}
+if(isset($_COOKIE[$current_theme."-bg_level"])) {
+	$bg_level = $_COOKIE[$current_theme."-bg_level"];
+}
+
+switch ($_COOKIE[$current_theme."-tstyle"]) {
+case style1:
+                $color_variation = "style1";
+                $template->assign_vars(array(                  
+                'QUASAR_LINK_COLOR'		=> "#3D9FD0",
+                'QUASAR_FONTFACE'	=>  "helvetica",
+                
+
+                
+));
+		break;	
+case style2:
+                $color_variation = "style2";
+                $template->assign_vars(array(               
+                'QUASAR_LINK_COLOR'		=> "#3D9FD0",
+                'QUASAR_FONTFACE'	=>  "helvetica",
+));
+		break;
+case style3:
+                $color_variation = "style3";
+                $template->assign_vars(array(               
+                'QUASAR_LINK_COLOR'		=> "#71A311",
+                'QUASAR_FONTFACE'	=>  "helvetica",
+));
+		break;
+case style4:
+                $color_variation = "style4";
+                $template->assign_vars(array(               
+                'QUASAR_LINK_COLOR'		=> "#71A311",
+                'QUASAR_FONTFACE'	=>  "helvetica",
+));
+		break;  
+case style5:
+                $color_variation = "style5";
+                $template->assign_vars(array(               
+                'QUASAR_LINK_COLOR'		=> "#cc0000",
+                'QUASAR_FONTFACE'	=>  "helvetica",
+));
+
+		break;
+case style6:
+                $color_variation = "style6";
+                $template->assign_vars(array(               
+                'QUASAR_LINK_COLOR'		=> "#cc0000",
+                'QUASAR_FONTFACE'	=>  "helvetica",
+));
+
+		break;             
+                }
+
+$template->assign_vars(array(
+		'QUASAR_STYLE'		=> $color_variation,
+)
+	);
+
+
+$delete_cookies = $_GET['delete_cookies'];
+if($delete_cookies == 'true') {
+
+ob_start();
+	setcookie($current_theme."-tstyle", "", time()-31536000);
+        setcookie($current_theme."-bg_level", "", time()-31536000);
+	header("Location: ". $_SERVER['PHP_SELF']);
+	exit;
+ob_end_flush();
+
+}
+<!-- ENDPHP -->
