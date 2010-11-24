@@ -148,17 +148,6 @@
             </div>  </div> 
   
      <!-- IF ENABLE_QUASAR_BOTTOM_MODULES -->
-   <div id="rt-bottomtab">
-   <div class="rt-container">
-    <div class="clear"></div>
-    <div class="rt-block">
-     <div class="bottomtab">
-      <span class="bottomtab2">{SITENAME}</span>
-     </div>
-    </div>
-    <div class="clear"></div>
-   </div>
-  </div>
   <div id="rt-bottom">
 <div class="rt-container">
 <!-- IF S_DISPLAY_ONLINE_LIST -->
@@ -168,8 +157,7 @@
 <div class="module-title"><div class="module-title2"><!-- IF U_VIEWONLINE --><h2 class="title"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h2><!-- ELSE --><h2 class="title">{L_WHO_IS_ONLINE}</h2><!-- ENDIF --></div></div> 
 <div class="module-inner"> 
 <div class="module-inner2"> 
-		{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
-                <!-- IF LEGEND --><br /><em>{L_LEGEND}: {LEGEND}</em><!-- ENDIF -->
+		{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}
 </div></div>
 </div></div>
         	
@@ -209,7 +197,7 @@
 <div id="rt-footer"><div id="rt-footer2">
 <div class="rt-container">
 <!-- IF S_DISPLAY_ONLINE_LIST -->
-<div class="rt-grid-4 rt-alpha">
+<div class="rt-grid-12 rt-alpha">
 <div class="rt-block"> 
 <div class="module-content"> 
 <div class="module-title"><!-- IF U_VIEWONLINE --><h2 class="title"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h2><!-- ELSE --><h2 class="title">{L_WHO_IS_ONLINE}</h2><!-- ENDIF --></div>
@@ -225,22 +213,15 @@
 <div class="rt-grid-4">
 <div class="rt-block"> 
 <div class="module-content"> 
-<div class="module-title"><h2 class="title">{L_BIRTHDAYS}</h2></div> 
-<div class="module-inner"> 
-<div class="module-inner2"> 
-		 <!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF -->
-</div> </div>
-</div></div>
+</div>
 </div>
 <!-- IF NEWEST_USER --> 
 <div class="rt-grid-4">
 <div class="rt-block"> 
 <div class="module-content"> 
-<div class="module-title"><h2 class="title">{L_STATISTICS}</h2></div> 
-<div class="module-inner"> 
-<div class="module-inner2"> 
-		    {TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}
-</div> </div>
+
+
+</div>
 </div></div>
         	
 </div>
