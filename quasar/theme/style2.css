@@ -23,11 +23,11 @@ h1, h2, h3, h4, h5 {color: #333;}
 
 
 /* Header */
-#rt-logo {background: url(images/logo/style2/logo.png) 0 0 no-repeat;}
+#rt-logo {background: url(images/logo/style2/logo.png) scroll 0% 60% no-repeat;}
 #rt-header {background: #0f0f0f url(images/backgrounds/style2/header-bg.png) 100% 0;}
-#rt-header2 {background: url(images/backgrounds/style2/header-div.png) 50% 100% repeat-x;}
-#rt-header3 {background: url(images/backgrounds/style2/header-div.png) 50% 0 repeat-x;}
-.backgroundlevel-high #rt-header4, .backgroundlevel-med #rt-header4 {background: url(images/backgrounds/style2/header-underlay.png) 50% 0 no-repeat;}
+#rt-header2 {}
+#rt-header3 {}
+.backgroundlevel-high #rt-header4, .backgroundlevel-med #rt-header4 {}
 #rt-header .title span {color: #ccc;}
 
 /* Top Menu */
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-bottomtab .bottomtab2 {background: url(images/body/style2/bottomtab-l.png) 0 0 no-repeat;color: #fff;}
 
 /* Footer */
-#rt-footer {color: #666;}
+#rt-footer {color: #000;}
 #rt-footer a:hover {color: #000;}
 #rt-footer .title {color: #777;}
 #rt-footer .title span {color: #333;}
