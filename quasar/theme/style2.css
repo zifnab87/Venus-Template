@@ -15,6 +15,13 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-top .search .inputbox {background: url(images/backgrounds/style2/search-bg.png) 0 0 no-repeat;color: #999;}
 #rt-top .title span {color: #ccc;}
 
+
+/* Custom Headers */
+#custom-header1 {background: url(images/shadow.png) 95% bottom scroll no-repeat;}
+#custom-header2 {background: url(images/showcase-layer.png) repeat-x 0 100% scroll;}
+#custom-header3 {background: url(images/showcase-layer2.png) repeat-x 0 100% scroll;}
+
+
 /* Header */
 #rt-logo {background: url(images/logo/style2/logo.png) 0 0 no-repeat;}
 #rt-header {background: #0f0f0f url(images/backgrounds/style2/header-bg.png) 100% 0;}
