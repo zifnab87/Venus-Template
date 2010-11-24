@@ -263,7 +263,11 @@ margin-top:10px;
 #rt-header {position: relative;z-index: 2;}
 #rt-header .rt-block {margin-bottom: 0;}
 #rt-header4 {padding: 5px 0;}
-#rt-logo {width: 236px;height: 49px;display: block;}
+#rt-logo {width: 236px;height: 160px;display: block;}
+
+/*Custom  Headers*/
+#custom-header2 {z-index: -1}
+#custom-header3 {z-index: 0}
 
 /* Top Menu */
 #rt-header ul {margin: 0;padding: 0;float: right;position: relative;z-index: 1000;}
@@ -276,7 +280,7 @@ margin-top:10px;
 #rt-header li ul {position:absolute;width:200px;top:-999em;left: auto;padding: 10px 0;}
 #rt-header li ul ul {margin: 0;}
 #rt-header li:hover ul ul, #rt-header li:hover ul ul ul, #rt-header li:hover ul ul ul ul {top:-999em;left: auto;}
-#rt-header li li {margin: 0;padding: 0 10px 0 18px;height:auto;width:172px;}
+#rt-header li li {margin: 0;padding: 0 10px 0 18px;height:auto;width:auto}
 #rt-header li li a, #rt-header li li.active a, #rt-header li li a:hover, #rt-header li li .separator, #rt-header li li.active .separator {margin:0;padding: 0;height: auto;float: none;width: auto;line-height:20px;display: block;}
 #rt-header li li a span, #rt-header li li.active a span, #rt-header li li a:hover span, #rt-header li li .separator span, #rt-header li li.active .separator span {width: auto;display: block;line-height: 20px;text-transform: none;padding: 5px 5px 0 10px;}
 #rt-header li li a, #rt-header li.active li a, #rt-header li li .separator, #rt-header li.active li .separator {font-weight:normal;}
@@ -360,7 +364,7 @@ h2.title {display: block;letter-spacing: normal;line-height: 1em;margin: 0;}
 .rokchecks {background-position: 0 -423px;background-repeat: no-repeat;}
 .rokchecks-active {background-position: 0 -634px;background-repeat: no-repeat;}
 .date-block .date {font-size: 110%;}
-#rt-breadcrumbs {margin-top: 10px;}
+#rt-breadcrumbs {margin-top: 0px;}
 #breadcrumbs-home {width: 15px;height: 15px;display: block;float: left;margin-top: 4px;}
 #breadcrumbs h3, .leading_separator {display: none;}
 span.breadcrumbs {display: block;font-size: 110%;font-weight: bold;overflow: hidden;}
