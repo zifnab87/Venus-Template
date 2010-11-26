@@ -189,7 +189,7 @@ a#logo:hover {
 
 .post {
 	padding: 0 10px;
-	margin-bottom: 4px;
+	margin-bottom: px;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 }
@@ -221,14 +221,14 @@ span.corners-top, span.corners-bottom, span.corners-top span, span.corners-botto
 	font-size: 1px;
 	line-height: 1px;
 	display: block;
-	height: 5px;
+	height: 9px;
 	background-repeat: no-repeat;
 }
 
 span.corners-top {
 	background-image: none;
 	background-position: 0 0;
-	margin: 0 -5px;
+	margin: 0 0px;
 }
 
 span.corners-top span {
@@ -239,7 +239,8 @@ span.corners-top span {
 span.corners-bottom {
 	background-image: none;
 	background-position: 0 100%;
-	margin: 0 -5px;
+	margin: 0 0px;
+	margin-bottom: 12px;
 	clear: both;
 }
 
@@ -247,6 +248,13 @@ span.corners-bottom span {
 	background-image: none;
 	background-position: 100% 100%;
 }
+
+span.corners-top span.custom-top-side, span.corners-bottom span.custom-bottom-side {
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+
 
 .headbg span.corners-bottom {
 	margin-bottom: -1px;

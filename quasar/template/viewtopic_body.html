@@ -114,11 +114,17 @@
 
 <!-- BEGIN postrow -->
 <div class="post-container">
+	<span class="corners-top"><span><span class="custom-top-side"></span></span></span>
+	<div class="custom-right" style="background: url({T_THEME_PATH}/images/right-side.png) repeat-y 100% 0; width: auto; padding-right: 9px">
+	<div class="custom-left" style="background	: url({T_THEME_PATH}/images/left-side.png) repeat-y; width: auto; padding-left: 9px">
+	
 	<div class="post-bg">
+	
 	<!-- IF postrow.S_FIRST_UNREAD --><a id="unread"></a><!-- ENDIF -->
+	
 	<div id="p{postrow.POST_ID}" class="post <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> online<!-- ENDIF -->">
-		<div class="inner"><span class="corners-top"><span></span></span>
-
+		<div class="inner">
+		
 		<div class="postbody">
 			<!-- IF postrow.S_IGNORE_POST -->
 				<div class="ignore">{postrow.L_IGNORE_POST}</div>
@@ -219,10 +225,11 @@
 
 		<div class="back2top"><a href="#wrap" class="top" title="{L_BACK_TO_TOP}">{L_BACK_TO_TOP}</a></div>
 
-		<span class="corners-bottom"><span></span></span></div>
+		</div>
+	</div></div>
 	</div>
-	
 </div>
+<span class="corners-bottom"><span><span class="custom-bottom-side"></span></span></span>
 <div class="bottom-corners-container">
 			<div class="rt-module-bottom"><div class="rt-module-bottom2"><div class="rt-module-bottom3"></div></div></div>
 			</div>

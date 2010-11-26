@@ -75,19 +75,28 @@ hr.dashed {
 }
 
 span.corners-top {
-	background-image: url("{T_THEME_PATH}/images/corners_left.png");
+	background-image: url("{T_THEME_PATH}/images/top-left-corner.png");
 }
 
 span.corners-top span {
-	background-image: url("{T_THEME_PATH}/images/corners_right.png");
+	background-image: url("{T_THEME_PATH}/images/top-right-corner.png");
+	background-position: 100% 0;
 }
 
 span.corners-bottom {
-	background-image: url("{T_THEME_PATH}/images/corners_left.png");
+	background-image: url("{T_THEME_PATH}/images/bottom-left-corner.png");
 }
 
 span.corners-bottom span {
-	background-image: url("{T_THEME_PATH}/images/corners_right.png");
+	background-image: url("{T_THEME_PATH}/images/bottom-right-corner.png");
+}
+
+span.corners-top span.custom-top-side {
+	background: url("{T_THEME_PATH}/images/top-side.png") repeat-x;
+}
+
+span.corners-bottom span.custom-bottom-side {
+	background: url("{T_THEME_PATH}/images/bottom-side.png") repeat-x;
 }
 
 /* Horizontal lists
