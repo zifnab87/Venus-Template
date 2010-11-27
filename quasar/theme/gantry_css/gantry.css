@@ -14,7 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {min-width: 960px;}
 
 /* Grid Block */
-.rt-block {padding: 15px;margin-bottom: 10px;position: relative;}
+.rt-block {padding: 15px;margin-bottom: 0px;position: relative;}
 #rt-content-top .rt-alpha, #rt-content-bottom .rt-alpha {margin-left: 0;}
 #rt-content-top .rt-omega, #rt-content-bottom .rt-omega {margin-right: 0;}
 
