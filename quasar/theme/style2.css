@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-toptab .toptab2 {background: url(images/body/style2/toptab-l.png) 0 0 no-repeat;color: #333;}
 .backgroundlevel-high #rt-toptab .shadow, .backgroundlevel-med #rt-toptab .shadow {background: url(images/backgrounds/style2/showcase-shadow.png) 50% 100% no-repeat;}
 #rt-content-top {background: url(images/body/style2/body-div.png) 50% 100% repeat-x;}
-#rt-main-surround {/*background: #fff url(images/backgrounds/style2/body-bg.png) 50% 0 repeat-x;*/}
+#rt-main-surround {/*background: #fff url(images/backgrounds/style2/body-bg.png) 50% 0 repeat-x;*/
+background-color: #e2f2a2}
 #rt-main-surround .title span, #rt-main-surround .rt-article-title span {color: #000;}
 #rt-main-surround .readon span, #rt-main-surround .readon .button {color: #333;}
 #rt-main-surround .readon:hover span, #rt-main-surround .readon:hover .button {color: #000;}

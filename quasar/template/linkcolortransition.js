@@ -1,21 +1,26 @@
 linksarray = document.getElementsByTagName("a");
-/*redstart=61; 
-greenstart=159; 
-bluestart=208;*/
-redend=105; 
-greenend=151; 
-blueend=20;
+
 for (var i = 0; i < linksarray.length; i++) {
 	if(linksarray[i].className!="username-coloured"){
+			currentcolor=linksarray[i].style.color;
+			/*colorstr=ColorToDec(currentcolor);
+			redstart = parseInt(colorstr[0]);
+			greenstart = parseInt(colorstr[1]);
+			bluestart = parseInt(colorstr[2]);*/
 			redstart=61; 
 			greenstart=159; 
-			bluestart=208
+			bluestart=208;
 			redend=105; 
 			greenend=151; 
 			blueend=20;
 			linksarray[i].style.color="#" + DecToHex(redstart) + DecToHex(greenstart) + DecToHex(bluestart);
 		linksarray[i].onmouseover = function(){ colortransition(this)};	
 		linksarray[i].onmouseout = function(){
+			currentcolor=this.style.color;
+			/*colorstr=ColorToDec(currentcolor);
+			redstart = parseInt(colorstr[0]);
+			greenstart = parseInt(colorstr[1]);
+			bluestart = parseInt(colorstr[2]);*/
 			redstart=61; 
 			greenstart=159; 
 			bluestart=208;
@@ -35,41 +40,44 @@ for (var i = 0; i < linksarray.length; i++) {
 
 	
 function colortransition(obj){
-				if ((redstart!=redend || bluestart!=blueend || greenstart!=greenend) && redstart>=0 && redstart<=255 && greenstart>=0 && greenstart<=255 && bluestart>=0 && blueend<=255){
-					if(redstart<redend){
-						redstart=redstart+1;
+				if ((redstart!=redend || bluestart!=blueend || greenstart!=greenend) && redstart>=0 && redstart<=255 && greenstart>=0 && greenstart<=255 && bluestart>=0 && bluestart<=255){
+					if(Math.abs(redstart-redend)<10){
+						redstart=redend;
+					}
+					
+					else if(redstart<redend){
+						redstart=redstart+10;
 					}
 					
 					else if(redstart>redend){
-						redstart=redstart-1;
-					}
-					else if(redstart>255 || redstart<0){
-						redstart=redend;
+						redstart=redstart-10;
 					}
 					if (greenstart!=greenend){
-						if(greenstart<greenend){
-							greenstart=greenstart+1;
-						}
-						else if(greenstart>greenend){ 
-							greenstart=greenstart-1;
-						}
-						else if(greenstart>255 || greenstart<0){
+						if( Math.abs(greenstart-greenend)<10){
 							greenstart=greenend;
 						}
+						else if(greenstart<greenend){
+							greenstart=greenstart+10;
+						}
+						else if(greenstart>greenend){ 
+							greenstart=greenstart-10;
+						}
+						
 					}
 					if (bluestart!=blueend){
-						if(bluestart<blueend){
-							bluestart=bluestart+1;
-						}
-						else if(bluestart>blueend){
-							bluestart=bluestart-1;
-						}
-						else if(bluestart>255 || bluestart<0){
+						if(Math.abs(bluestart-blueend)<10){
 							bluestart=blueend;
 						}
+						else if(bluestart<blueend){
+							bluestart=bluestart+10;
+						}
+						else if(bluestart>blueend){
+							bluestart=bluestart-10;
+						}
+						
 					}
 					obj.style.color="#" + DecToHex(redstart) + DecToHex(greenstart) + DecToHex(bluestart);
-					timeout=setTimeout(function(){colortransition(obj)},1);
+					timeout=setTimeout(function(){colortransition(obj)},50);
 				
 		}
 		else {
@@ -100,7 +108,5 @@ function ColorToDec(colorstr){
 	if (!colorstr)
 		return;
 	colorstr = colorstr.replace(/rgb\(|\)/g, "").split(",");
-	redstart = parseInt(colorstr[0], 10);
-	greenstart = parseInt(colorstr[1], 10);
-	bluestart = parseInt(colorstr[2], 10);
+	return colorstr;
 }
