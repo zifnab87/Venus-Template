@@ -1,7 +1,7 @@
 linksarray = document.getElementsByTagName("a");
 
 for (var i = 0; i < linksarray.length; i++) {
-	if(linksarray[i].className!="username-coloured"){
+	if(linksarray[i].className!="username-coloured" && (linksarray[i].className.indexOf("item"))==-1 && !linksarray[i].style.color){
 			currentcolor=linksarray[i].style.color;
 			/*colorstr=ColorToDec(currentcolor);
 			redstart = parseInt(colorstr[0]);
