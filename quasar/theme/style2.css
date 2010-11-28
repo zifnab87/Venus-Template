@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-header ul.menu li.active > a, #rt-header ul.menu li:hover > a, #rt-header ul.menu li.active > .separator, #rt-header ul.menu li:hover > .separator {background: url(images/menus/style2/menutab-r.png) 100% 0 no-repeat;color: #fff;}
 #rt-header ul.menu li.active > a span, #rt-header ul.menu li:hover > a span, #rt-header ul.menu li.active > .separator span, #rt-header ul.menu li:hover > .separator span {background: url(images/menus/style2/menutab-l.png) 0 0 no-repeat;}
 
+/* Custom Indication of New Pms with different color */
+#rt-header ul.menu li.active> a.newpms, #rt-header ul.menu li> a.newpms {color: #699714}
+
 /* Menu Dropdowns */
 #rt-header li ul {background: #222;border: 1px solid #333;}
 

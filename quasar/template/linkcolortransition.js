@@ -1,3 +1,8 @@
+/*
+//Author:Michael Michaelidis
+//Year: 2010
+//Username: Zifnab */
+
 linksarray = document.getElementsByTagName("a");
 
 for (var i = 0; i < linksarray.length; i++) {

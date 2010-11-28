@@ -428,7 +428,7 @@ window.addEvent('domready', function() {
                 <li  <!-- IF IE_VERSION neq '6' --><!-- IF U_PROFILE_STYLE -->class="item2 active root"<!-- ELSE -->class="item2 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_PROFILE_STYLE -->id="current"<!-- ENDIF  --><!-- ENDIF -->><a class="orphan item bullet" href="{U_PROFILE}" title="{L_PROFILE}" accesskey="u"><span>{L_PROFILE}</span></a></li>
 
 
-<!-- IF S_DISPLAY_PM --><li <!-- IF IE_VERSION neq '6' --><!-- IF U_PRIVATEMSGS_STYLE -->class="item3 active root"<!-- ELSE -->class="item3 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_PRIVATEMSGS_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_PRIVATEMSGS}"><span>{PRIVATE_MESSAGE_INFO}</span></a></li><!-- ENDIF -->
+<!-- IF S_DISPLAY_PM --><li <!-- IF IE_VERSION neq '6' --><!-- IF U_PRIVATEMSGS_STYLE -->class="item3 active root"<!-- ELSE -->class="item3 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_PRIVATEMSGS_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet <!-- IF S_USER_NEW_PRIVMSG --> newpms<!-- ENDIF --> " href="{U_PRIVATEMSGS}"><span>{PRIVATE_MESSAGE_INFO}</span></a></li><!-- ENDIF -->
 <!-- ENDIF -->  
  
 		
@@ -540,27 +540,24 @@ window.addEvent('domready', function() {
           </div>
 <div id="wrap">
 	<a id="top" name="top" accesskey="t"></a>
-	<div id="
-	">
-
+<div id="">
 <!-- IF QUASAR_MENUPOSITION eq 'full' or QUASAR_MENUPOSITION eq 'fluid' -->
 		<div class="navbar">
 			<div class="inner">
 			<!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
 			<ul class="linklist leftside">
-				<li class="icon-ucp">
-					
 					<!-- IF U_RESTORE_PERMISSIONS --> &bull;
+					<li class="icon-ucp">
 					<a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a>
+					</li>
 					<!-- ENDIF -->
-				</li>
+				
 			</ul>
 			<!-- ENDIF -->
 </div>
 		</div>
-
+</div>
 <!-- ENDIF -->
-	</div>
 	</div>
 
 	<a name="start_here"></a>
