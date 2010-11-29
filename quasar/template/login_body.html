@@ -13,8 +13,8 @@
 			<dt><label for="{USERNAME_CREDENTIAL}">{L_USERNAME}:</label></dt>
 			<dd><input type="text" tabindex="1" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" value="{USERNAME}" class="inputbox autowidth" /></dd>
 		</dl>-->
-		<div class="custom-textinput loginform"><input tabindex="1" type="text" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" class="inputbox" title="{L_USERNAME}" value="Username"/></div>
-		<div class="custom-textinput loginform"><input tabindex="2" type="password" name="{PASSWORD_CREDENTIAL}" id="{PASSWORD_CREDENTIAL}" size="25" class="inputbox" title="{L_USERNAME}" value="Username"/></div>
+		<div class="custom-textinput loginform"><input tabindex="1" type="text" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" class="inputbox" title="{L_USERNAME}" value="{L_USERNAME}" onclick="if(this.value=='{L_USERNAME}')this.value='';" onblur="if(this.value=='')this.value='{L_USERNAME}';"></div>
+		<div class="custom-textinput loginform"><input tabindex="2" type="password" name="{PASSWORD_CREDENTIAL}" id="{PASSWORD_CREDENTIAL}" size="25" class="inputbox" title="{L_PASSOWRD}" value="{L_PASSWORD}" onclick="if(this.value=='{L_PASSWORD}')this.value='';" onblur="if(this.value=='')this.value='{L_PASSWORD}';"></div>
 		<!-- IF S_DISPLAY_FULL_LOGIN and (U_SEND_PASSWORD or U_RESEND_ACTIVATION) -->
 			<!-- IF U_SEND_PASSWORD --><div class="loginform"><a href="{U_SEND_PASSWORD}">{L_FORGOT_PASS}</a></div><!-- ENDIF -->
 			<!-- IF U_RESEND_ACTIVATION --><div class="loginform"><a href="{U_RESEND_ACTIVATION}">{L_RESEND_ACTIVATION}</a></div><!-- ENDIF -->
