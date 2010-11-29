@@ -343,8 +343,8 @@ input.disabled {
 
 /* Topic and forum Search */
 .search-box {
-	margin-top: 3px;
-	margin-left: 5px;
+	margin-top: 0px;
+	margin-left: 0px;
 	float: left;
 }
 
@@ -354,7 +354,7 @@ input.disabled {
 input.search {
 	background-image: none;
 	background-repeat: no-repeat;
-	background-position: left 1px;
+	background-position: left 6px;
 	padding-left: 17px;
 }
 

@@ -59,7 +59,29 @@ hr.dashed {
 }
 
 
+.custom-textinput {
+	background: url("{T_THEME_PATH}/images/custom-inputtext.png") center center no-repeat ;
+}
 
+.custom-textinput input#username, .custom-textinput input#password, .custom-textinput input#search_keywords {
+background-color: transparent;
+}
+
+.custom-button {
+	background: url("{T_THEME_PATH}/images/custom-button-off.png") center center no-repeat ;
+}
+
+.custom-button:hover {
+	background: url("{T_THEME_PATH}/images/custom-button-on.png") center center no-repeat ;
+}
+
+.custom-button input.custbutton {
+background: none transparent;
+}
+
+.custom-button input.custbutton:hover {
+background: none transparent;
+}
 
 
 .bg1	{ background-color: #ECF3F7; }

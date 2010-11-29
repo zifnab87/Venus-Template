@@ -1,0 +1,59 @@
+<!-- INCLUDE overall_header.html -->
+
+<form action="{S_LOGIN_ACTION}" method="post" id="login">
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<div class="content">
+		<h2><!-- IF LOGIN_EXPLAIN -->{LOGIN_EXPLAIN}<!-- ELSE -->{L_LOGIN}<!-- ENDIF --></h2>
+
+		<fieldset style="margin-left: 30px" <!-- IF not S_CONFIRM_CODE -->class="fields1"<!-- ELSE -->class="fields2"<!-- ENDIF -->>
+		<!-- IF LOGIN_ERROR --><div class="error">{LOGIN_ERROR}</div><!-- ENDIF -->
+		<!--<dl>
+			<dt><label for="{USERNAME_CREDENTIAL}">{L_USERNAME}:</label></dt>
+			<dd><input type="text" tabindex="1" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" value="{USERNAME}" class="inputbox autowidth" /></dd>
+		</dl>-->
+		<div class="custom-textinput loginform"><input tabindex="1" type="text" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" class="inputbox" title="{L_USERNAME}" value="Username"/></div>
+		<div class="custom-textinput loginform"><input tabindex="2" type="password" name="{PASSWORD_CREDENTIAL}" id="{PASSWORD_CREDENTIAL}" size="25" class="inputbox" title="{L_USERNAME}" value="Username"/></div>
+		<!-- IF S_DISPLAY_FULL_LOGIN and (U_SEND_PASSWORD or U_RESEND_ACTIVATION) -->
+			<!-- IF U_SEND_PASSWORD --><div class="loginform"><a href="{U_SEND_PASSWORD}">{L_FORGOT_PASS}</a></div><!-- ENDIF -->
+			<!-- IF U_RESEND_ACTIVATION --><div class="loginform"><a href="{U_RESEND_ACTIVATION}">{L_RESEND_ACTIVATION}</a></div><!-- ENDIF -->
+		<!-- ENDIF -->
+		<!-- IF CAPTCHA_TEMPLATE and S_CONFIRM_CODE -->
+			<!-- DEFINE $CAPTCHA_TAB_INDEX = 3 -->
+			<!-- INCLUDE {CAPTCHA_TEMPLATE} -->
+		<!-- ENDIF -->
+		<!-- IF S_DISPLAY_FULL_LOGIN -->
+		
+			<!-- IF S_AUTOLOGIN_ENABLED --><div class="loginform"><label for="autologin"><input type="checkbox" name="autologin" id="autologin" tabindex="4" /> {L_LOG_ME_IN}</label></div><!-- ENDIF -->
+			<div class="loginform"><label for="viewonline"><input type="checkbox" name="viewonline" id="viewonline" tabindex="5" /> {L_HIDE_ME}</label></div>
+		
+		<!-- ENDIF -->
+
+			{S_HIDDEN_FIELDS}<div class="custom-button"><input tabindex="6" type="submit" name="login" value="{L_LOGIN}" class="custbutton" /></div>
+		{S_LOGIN_REDIRECT}
+		</fieldset>
+	</div>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+
+<!-- IF not S_ADMIN_AUTH and S_REGISTER_ENABLED -->
+	<div class="panel">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="content">
+			<h3>{L_REGISTER}</h3>
+			<p>{L_LOGIN_INFO}</p>
+			<p><strong><a href="{U_TERMS_USE}">{L_TERMS_USE}</a> | <a href="{U_PRIVACY}">{L_PRIVACY}</a></strong></p>
+			<hr class="dashed" />
+			<div class="custom-button"><a href="{U_REGISTER}" class="custbutton registerlogin" style="color:#000000">{L_REGISTER}</a></div>
+		</div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+<!-- ENDIF -->
+
+</form>
+
+<!-- INCLUDE overall_footer.html -->

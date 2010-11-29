@@ -133,6 +133,79 @@ a#logo:hover {
 	padding: 1px 5px;
 }
 
+/*custom text input (username/password/search)*/
+.custom-textinput {
+	height: 26px;
+	width: 157px;
+	margin-top: 2px;
+	float: left;
+	margin-right: 3px;
+}
+.custom-textinput.loginform, .loginform {
+clear: both;
+padding: 3px;
+
+}
+.custom-textinput.custom-searchbox {
+
+	margin-top: 0px;
+}
+
+.custom-textinput input#username, .custom-textinput input#password,.custom-textinput input#search_keywords {
+	height: 22px;
+	width: 149px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px;
+	padding:1px;
+	padding-left: 4px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.4em;
+}
+.custom-textinput input#search_keywords {
+	padding-left: 15px;
+	width: 140px;
+}
+
+
+/*custom buttons Login/Submit etc */
+.custom-button {
+	height: 26px;
+	width: 73px;
+	float: left;
+	padding: 1px;
+	margin-top: 1px;
+	
+}
+
+.custom-button input.custbutton,.custom-button input.custbutton:hover, .custom-button a  {
+	border: 0px;
+	height: 26px;
+	width: 73px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.4em;
+
+
+}
+
+
+.custom-button a  {
+
+margin-left: 7px;
+line-height: 1.4em;
+}
+
+.custom-button a:hover  {
+
+margin-left: 7px;
+line-height: 1.4em;
+text-decoration: none;
+}
+
+
+
 #search-box li {
 	text-align: right;
 	margin-top: 4px;
