@@ -88,6 +88,15 @@ background: none transparent;
 .bg2	{ background-color: #e1ebf2;  }
 .bg3	{ background-color: #cadceb; }
 
+.custom-right {
+	background: url({T_THEME_PATH}/images/right-side.png) repeat-y 100% 0; width: auto; padding-right: 9px
+}
+
+.custom-left {
+	background	: url({T_THEME_PATH}/images/left-side.png) repeat-y; width: auto; padding-left: 9px
+}
+
+
 .ucprowbg {
 	background-color: #DCDEE2;
 }
