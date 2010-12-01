@@ -11,20 +11,26 @@ a:hover {color: #000;}
 h1, h2, h3, h4, h5 {color: #333;}
 
 /* Top */
-#rt-top {background: #0f0f0f url(images/backgrounds/style2/header-bg.png) 100% 0;color: #999;}
+#rt-top {/*background: #0f0f0f url(images/backgrounds/style2/circuit.jpg) 100% 0;color: #999;*/}
 #rt-top .search .inputbox {background: url(images/backgrounds/style2/search-bg.png) 0 0 no-repeat;color: #999;}
 #rt-top .title span {color: #ccc;}
 
 
 /* Custom Headers */
-#custom-header1 {background: url(images/shadow.png) 95% bottom scroll no-repeat;}
-#custom-header2 {background: url(images/showcase-layer.png) repeat-x 0 100% scroll;}
-#custom-header3 {background: url(images/showcase-layer2.png) repeat-x 0 100% scroll;}
+#custom-header1 {background: url(images/shadowd.jpg) center bottom scroll no-repeat;}
+#custom-header2	 {background: url(images/shadowe.png) repeat-x bottom center scroll;}
+
+#custom-header3 {background: url(images/showcase-layer.png) repeat-x 0 1% scroll;}
+#custom-header4 {background: url(images/showcase-layer2.png) repeat-x 0 10% scroll;}
+
+/* Custom bottom */
+
+#custom-bottom {background: url(images/shadowf.png) center top scroll no-repeat;}
 
 
 /* Header */
 #rt-logo {background: url(images/logo/style2/logo.png) scroll 0% 60% no-repeat;}
-#rt-header {background: #0f0f0f url(images/backgrounds/style2/header-bg.png) 100% 0;}
+#rt-header {background: #0f0f0f url(images/backgrounds/style2/circuit.jpg) 100% 0;}
 #rt-header2 {}
 #rt-header3 {}
 .backgroundlevel-high #rt-header4, .backgroundlevel-med #rt-header4 {}
@@ -78,7 +84,7 @@ background-color: #e2f2a2}
 #rt-main-surround ul.menu li.active > a, #rt-main-surround ul.menu li > a:hover, #rt-main-surround ul.menu li.active > .separator {color: #000;}
 
 /* Bottom */
-#rt-bottom {background: #699714 url(images/backgrounds/style2/bottom-bg.png) 50% 0 repeat-x;color: #fff;}
+#rt-bottom {background: #699714 url(images/shadowf.png) 50% 0 no-repeat;color: #fff;}
 #rt-bottom .title {color: #000;}
 #rt-bottom .title span {color: #fff;}
 #rt-bottom .readon span, #rt-bottom .readon .button {color: #597C16;}
