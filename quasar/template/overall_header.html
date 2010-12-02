@@ -316,7 +316,10 @@ window.addEvent('domready', function() {
 
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} backgroundlevel-high bodylevel-high cssstyle-style6 font-family-lucida font-size-is-default col12">
 
- <div id="rt-top">
+
+
+  <div id="rt-header" >
+	 <div id="rt-top" style="background-color: #000000; opacity: 0.88"	>
    <div class="rt-container">
     <div id="rt-top2">
      			  <!-- IF SHOW_QUASAR_FONT -->
@@ -365,11 +368,9 @@ window.addEvent('domready', function() {
     </div>
    </div>
   </div>
-
-  <div id="rt-header">
-	<div id="custom-header3">
-	<div id="custom-header2">
-	<div id="custom-header1">
+	<div id="custom-header3" style="background-color: #000000; opacity: 0.88"	>
+	<div id="custom-header2" >
+	<div id="custom-header1" >
   
    <div class="rt-container">
     <div id="rt-header2">
@@ -508,17 +509,22 @@ window.addEvent('domready', function() {
     <div class="clear"></div>
    </div>
   </div>
+  <div style=" background: url({T_THEME_PATH}/images/headerdropshadow.png) repeat-x 0% 100%; height: 16px; margin-left:auto; margin-right: auto;">top</div>
   <div id="rt-main-surround">
+  
+  <div style="width:922px;  background-color: #e8e3d5; height: 1px;  margin-left:auto; margin-right: auto;">top</div>
    <div id="rt-main" class="mb8-sa4">
       
     <div class="rt-container">
-
-    <div class="rt-grid-<!-- IF QUASAR_MENUPOSITION eq 'full' -->12<!-- ELSE -->8 <!-- ENDIF --> <!-- IF QUASAR_MENUPOSITION == left -->rt-push-4<!-- ENDIF -->"> 
+    
+	<div class="rt-grid-<!-- IF QUASAR_MENUPOSITION eq 'full' -->12<!-- ELSE -->8 <!-- ENDIF --> <!-- IF QUASAR_MENUPOSITION == left -->rt-push-4<!-- ENDIF -->"> 
 	  
 	 
 	  <div class="custom-body-bg1"  style=" background: url({T_THEME_PATH}/images/rightshadow.png) repeat-y 0% 100%; "> 
 	  <div class="custom-body-bg2" style="background: url({T_THEME_PATH}/images/leftshadow.png) repeat-y 100% 100%; padding-left: 9px; padding-right: 9px">
 	  <div class="custom-body-bg3" style="background-color: #ffffff"> 
+	  
+	   
 	   <!-- IF SHOW_QUASAR_PATHWAY -->
 												<div id="rt-breadcrumbs">
 													<div class="rt-container">
@@ -530,7 +536,9 @@ window.addEvent('domready', function() {
                                                 <div class="clear"></div>
                                             </div>    
 					</div><!-- ENDIF -->
+	
 	  <div class="rt-block" style="padding: 25px">
+	  
        <div id="rt-mainbody">
         <div class="rt-joomla">
          <div class="rt-article">
