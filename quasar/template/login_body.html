@@ -1,9 +1,11 @@
 <!-- INCLUDE overall_header.html -->
 
 <form action="{S_LOGIN_ACTION}" method="post" id="login">
-<div class="panel">
-	<div class="inner"><span class="corners-top"><span></span></span>
-
+<div class="inner"><span class="corners-top"><span><span class="custom-top-side"></span></span></span>
+<div class="custom-right">
+	<div class="custom-left">
+<div class="panel login">
+	
 	<div class="content">
 		<h2><!-- IF LOGIN_EXPLAIN -->{LOGIN_EXPLAIN}<!-- ELSE -->{L_LOGIN}<!-- ENDIF --></h2>
 
@@ -34,13 +36,17 @@
 		{S_LOGIN_REDIRECT}
 		</fieldset>
 	</div>
-	<span class="corners-bottom"><span></span></span></div>
+	</div></div></div>
+	<span class="corners-bottom"><span><span class="custom-bottom-side"</span></span>
 </div>
 
 
 <!-- IF not S_ADMIN_AUTH and S_REGISTER_ENABLED -->
-	<div class="panel">
-		<div class="inner"><span class="corners-top"><span></span></span>
+<div class="inner"><span class="corners-top"><span><span class="custom-top-side"></span></span></span>
+	<div class="custom-right">
+	<div class="custom-left">
+	<div class="panel login">
+		
 
 		<div class="content">
 			<h3>{L_REGISTER}</h3>
@@ -49,8 +55,8 @@
 			<hr class="dashed" />
 			<div class="custom-button"><a href="{U_REGISTER}" class="custbutton registerlogin" style="color:#000000">{L_REGISTER}</a></div>
 		</div>
-
-		<span class="corners-bottom"><span></span></span></div>
+		</div></div></div>
+		<span class="corners-bottom"><span><span class="custom-bottom-side"></span></span>
 	</div>
 <!-- ENDIF -->
 
