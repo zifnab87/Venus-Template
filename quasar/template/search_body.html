@@ -3,9 +3,12 @@
 <h2 class="solo">{L_SEARCH}</h2>
 
 <form method="get" action="{S_SEARCH_ACTION}">
-
-<div class="panel">
-	<div class="inner"><span class="corners-top"><span></span></span>
+<span class="corners-top"><span><span class="custom-top-side"></span></span></span>
+	<div class="custom-right">
+	<div class="custom-left">
+<div class="panel searchbody">
+	
+	<div class="inner">
 	<h3>{L_SEARCH_QUERY}</h3>
 
 	<fieldset>
@@ -21,12 +24,18 @@
 	</dl>
 	</fieldset>
 
-	<span class="corners-bottom"><span></span></span></div>
+
 </div>
+</div></div>
+</div>
+<span class="corners-bottom"><span><span class="custom-bottom-side"></span></span></span>
 
-<div class="panel bg2">
-	<div class="inner"><span class="corners-top"><span></span></span>
-
+<span class="corners-top"><span><span class="custom-top-side"></span></span></span>
+<div class="custom-right">
+	<div class="custom-left">
+<div class="panel searchbody">
+	<div class="inner">
+	
 	<h3>{L_SEARCH_OPTIONS}</h3>
 
 	<fieldset>
@@ -74,21 +83,13 @@
 		<dd><select name="ch" title="{L_RETURN_FIRST}">{S_CHARACTER_OPTIONS}</select> {L_POST_CHARACTERS}</dd>
 	</dl>
 	</fieldset>
-
-	<span class="corners-bottom"><span></span></span></div>
-</div>
-
-<div class="panel bg3">
-	<div class="inner"><span class="corners-top"><span></span></span>
-
 	<fieldset class="submit-buttons">
 		{S_HIDDEN_FIELDS}<input type="reset" value="{L_RESET}" name="reset" class="button2" />&nbsp;
 		<input type="submit" name="submit" value="{L_SEARCH}" class="button1" />
 	</fieldset>
-
-	<span class="corners-bottom"><span></span></span></div>
-</div>
-
+	</div>
+	
+</div></div></div><span class="corners-bottom"><span><span class="custom-bottom-side"></span></span></span>
 </form>
 
 <!-- IF .recentsearch -->

@@ -255,14 +255,23 @@ text-decoration: none;
 }
 
 .panel {
-	margin-bottom: 4px;
+	margin-bottom: 0px;
 	padding: 0 10px;
 	background-color: #f3f3f3;
 }
+.ucp-main div.panel, #page-body div.panel{
+	margin-bottom: 10px;
+}
+
+#page-body div.panel.searchbody {
+	margin-bottom: 0px;
+}
+
+
 
 .post {
 	padding: 0 10px;
-	margin-bottom: px;
+	margin-bottom: 0px;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 }

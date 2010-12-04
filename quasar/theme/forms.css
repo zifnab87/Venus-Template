@@ -216,7 +216,7 @@ fieldset.quickmod {
 fieldset.submit-buttons {
 	text-align: center;
 	vertical-align: middle;
-	margin: 5px 0;
+	margin: 0px 0px;
 }
 
 fieldset.submit-buttons input {
