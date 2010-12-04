@@ -391,9 +391,17 @@ ul.rightside {
 
 /* Table styles
 ----------------------------------------*/
+
+/*custom color in tables */
+
+table#memberlist th.name, table#memberlist th.posts, table#memberlist th.joined,table#memberlist th.active,table#memberlist th.mark,table#memberlist th.info		{ background-color: #333; color: #fff;}
+table.table1 th.name, table.table1  th.info		{ background-color: #333; color: #ddd;}
+
+
 table.table1 {
 	/* See tweaks.css */
 }
+
 
 #ucp-main table.table1 {
 	padding: 2px;
@@ -401,10 +409,9 @@ table.table1 {
 
 table.table1 thead th {
 	font-weight: normal;
-	text-transform: uppercase;
 	line-height: 1.3em;
 	font-size: 1em;
-	padding: 0 0 4px 3px;
+	padding: 1px 1px 4px 3px;
 }
 
 table.table1 thead th span {
@@ -421,6 +428,7 @@ table.table1 tbody tr:hover, table.table1 tbody tr.hover {
 
 table.table1 td {
 	font-size: 1.1em;
+	text-align: center;
 }
 
 table.table1 tbody td {
@@ -437,20 +445,21 @@ table.table1 tbody th {
 }
 
 /* Specific column styles */
-table.table1 .name		{ text-align: left; }
-table.table1 .posts		{ text-align: center !important; width: 7%; }
-table.table1 .joined	{ text-align: left; width: 15%; }
-table.table1 .active	{ text-align: left; width: 15%; }
-table.table1 .mark		{ text-align: center; width: 7%; }
-table.table1 .info		{ text-align: left; width: 30%; }
+
+table.table1 .name		{ text-align: center; }
+table.table1 .posts		{ text-align: center }
+table.table1 .joined	{ text-align: center; }
+table.table1 .active	{ text-align: center;  }
+table.table1 .mark		{ text-align: center;  }
+table.table1 .info		{ text-align: center; }
 table.table1 .info div	{ width: 100%; white-space: normal; overflow: hidden; }
 table.table1 .autocol	{ line-height: 2em; white-space: nowrap; }
 table.table1 thead .autocol { padding-left: 1em; }
 
-table.table1 span.rank-img {
+/*table.table1 span.rank-img {
 	float: right;
 	width: auto;
-}
+}*/
 
 table.info td {
 	padding: 3px;
