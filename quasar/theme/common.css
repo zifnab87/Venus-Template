@@ -263,7 +263,7 @@ text-decoration: none;
 	margin-bottom: 10px;
 }
 
-#page-body div.panel.searchbody {
+#page-body div.panel.searchbody, #page-body div.panel.ucpagreement {
 	margin-bottom: 0px;
 }
 
