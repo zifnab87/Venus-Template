@@ -44,6 +44,13 @@ hr.dashed {
 	background-color: #cadceb;
 }
 
+.navbar ul{
+	background-color: #f1f1f1;
+}
+.custom-right-navbar .custom-left-navbar ul.linklist {
+	background-color: #f1f1f1;
+}
+
 .forabg {
 	background-color: #0076b1;
 	background-image: url("{T_THEME_PATH}/images/bg_list.gif");
@@ -88,13 +95,22 @@ background: none transparent;
 .bg2	{ background-color: #e1ebf2;  }
 .bg3	{ background-color: #cadceb; }
 
-.custom-right {
+.custom-right, .custom-right-navbar {
 	background: url({T_THEME_PATH}/images/right-side.png) repeat-y 100% 0; width: auto; padding-right: 9px
 }
 
-.custom-left {
+.custom-left,.custom-left-navbar  {
 	background	: url({T_THEME_PATH}/images/left-side.png) repeat-y; width: auto; padding-left: 9px
 }
+
+.custom-right-navbar {
+	background: url({T_THEME_PATH}/images/right-side.png) repeat-y 100% 0; width: auto; padding-right: 9px; margin-right: -10px ;  
+}
+
+.custom-left-navbar {
+	background	: url({T_THEME_PATH}/images/left-side.png) repeat-y; width: auto; padding-left: 9px; margin-left: -10px;
+}
+
 
 
 .ucprowbg {
