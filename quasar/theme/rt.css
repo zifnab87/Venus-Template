@@ -256,8 +256,10 @@ margin-top:10px;
 .icon-search					{ background-image: url("{T_THEME_PATH}/images/icon_search.png"); }
 
 /* Top */
-#rt-top .search .inputbox {width: 236px;height: 20px;line-height: 16px;border: 0;padding: 3px 0 0 5px;}
-#rt-top .search {text-align: right;}
+/*#rt-top .search .inputbox {width: 236px;height: 20px;line-height: 16px;border: 0;padding: 3px 0 0 5px;}
+#rt-top .search {text-align: right;}*/
+.search .inputbox {width: 87px;height: 30px;line-height: 16px;border: 0;padding: 0px 10px 0 28px; opacity: 1.0; color: #fffff}
+.inputbox {width: 10px}
 
 /* Header */
 #rt-header {position: relative;z-index: 2;}

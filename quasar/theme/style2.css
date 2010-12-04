@@ -6,7 +6,7 @@
  * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
  */
 /* Core */
-body {background: url(images/backgrounds/style2/keynote.png) repeat;color: #333;}
+body {background: url(images/backgrounds/style2/circuitlight2.png) repeat;color: #333;}
 a:hover {color: #000;}
 h1, h2, h3, h4, h5 {color: #333;}
 
@@ -18,8 +18,8 @@ h1, h2, h3, h4, h5 {color: #333;}
 
 /* Custom Headers */
 #custom-header1 {/*background: url(images/shadow.png) 95% bottom scroll no-repeat;*/}
-#custom-header2 {background: url(images/showcase-layer.png) repeat-x 0 100% scroll;}
-#custom-header3 {background: url(images/showcase-layer2.png) repeat-x 0 100% scroll;}
+#custom-header2 {background: url(images/showcase-layer.png) repeat-x 0 40px scroll;}
+#custom-header3 {background: url(images/showcase-layer2.png) repeat-x 0 60px scroll;}
 
 
 /* Header */
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-main-surround ul.menu li.active > a, #rt-main-surround ul.menu li > a:hover, #rt-main-surround ul.menu li.active > .separator {color: #000;}
 
 /* Bottom */
-#rt-bottom {/*background: #699714 url(images/backgrounds/style2/bottom-bg.png) 50% 0 repeat-x; */ color: #fff;}
+#rt-bottom {background-color: #699714; color: #fff;}
 #rt-bottom .title {color: #000;}
 #rt-bottom .title span {color: #fff;}
 #rt-bottom .readon span, #rt-bottom .readon .button {color: #597C16;}
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-bottomtab .bottomtab2 {background: url(images/body/style2/bottomtab-l.png) 0 0 no-repeat;color: #fff;}
 
 /* Footer */
-#rt-footer {color: #000;}
+#rt-footer {color: #000; }
 #rt-footer a:hover {color: #000;}
 #rt-footer .title {color: #777;}
 #rt-footer .title span {color: #333;}
@@ -129,6 +129,7 @@ body .button2-left .linkmacro {background: url(images/system/light/j_button2_rok
 
 /* RTL */
 body.rtl #rt-top .search .inputbox {background: url(images/backgrounds/style2/search-bg-rtl.png) 0 0 no-repeat;}
+.search .inputbox {background: url(images/backgrounds/style2/search-bg-rtl.png) 0 0 no-repeat;}
 body.rtl #form-login ul li a, body.rtl #com-form-login ul li a, body.rtl ul.rt-more-articles li a, body.rtl .rt-section-list ul li a  {background-image: url(images/body/style2/arrows-rtl.png);}
 body.rtl #rt-main-surround ul.menu li a, body.rtl #rt-main-surround ul.menu li .separator, body.rtl #rt-main-surround ul.menu li .item {background: url(images/body/style2/arrows-rtl.png) 100% 10px no-repeat;}
 body.rtl span.breadcrumbs img {background: url(images/body/style2/arrows-rtl.png) 50% 4px no-repeat;}

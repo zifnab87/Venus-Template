@@ -319,7 +319,7 @@ window.addEvent('domready', function() {
 
 
   <div id="rt-header" >
-	 <div id="rt-top" style="background-color: #000000; opacity: 0.88"	>
+	 <div id="rt-top" style="background-color: #000000; opacity: 0.88">
    <div class="rt-container">
     <div id="rt-top2">
      			  <!-- IF SHOW_QUASAR_FONT -->
@@ -347,23 +347,6 @@ window.addEvent('domready', function() {
 		
 </div>
 <!-- ENDIF -->
-  <!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-     <div class="rt-grid-4 rt-push-5 rt-omega">
-      <div class="rt-block">
-       <div class="module-surround">
-        <div class="module-content">
-        <form action="{U_SEARCH}" method="post" id="rokajaxsearch" class="light">
-          <fieldset>
-	  <div class="search">
-           <input name="keywords" id="roksearch_search_str" type="text"  title="{L_SEARCH_KEYWORDS}" class="inputbox" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
-          </div><input type="hidden" name="task" value="search" /> <input type="hidden" name="option" value="com_search" /> <input type="hidden" name="Itemid" value="54" />
-        </fieldset> 
-	</form>
-        </div>
-       </div>
-      </div>
-     </div>
-   <!-- ENDIF -->
      <div class="clear"></div>
     </div>
    </div>
@@ -376,13 +359,13 @@ window.addEvent('domready', function() {
     <div id="rt-header2">
      <div id="rt-header3">
       <div id="rt-header4">
-	    <div class="rt-grid-12 rt-omega"> 
+	    <div class="rt-grid-7 rt-push-4 rt-omega" style=""> 
 		<div class="_menu">
          <div class="rt-block">
           <div class="module-surround">
            <div class="module-icon"></div>
            <div class="module-content">
-		
+
 		<!-- IF ALLOW_QUASAR_COLORSWITCHER --> 
 <ul id="stylesw" class="menu level1">
 
@@ -411,7 +394,11 @@ window.addEvent('domready', function() {
 
    
 	    <ul id="mainmenu1" class="menu level1">
+		
+		
 			
+	
+	
 		
  <!-- IF S_ALLOW_JMENU -->
                             <!-- IF S_USER_LOGGED_IN -->
@@ -434,7 +421,7 @@ window.addEvent('domready', function() {
  
 		
 <ul id="mainmenu2" class="menu level1" style="float:left">
-
+		
 <!-- IF S_DISPLAY_SEARCH or (S_USER_LOGGED_IN and not S_IS_BOT) -->
 <!-- IF QUASAR_MENUPOSITION eq 'full' or QUASAR_MENUPOSITION eq 'fluid' -->
 		    <li class="item73 parent root" >
@@ -474,13 +461,19 @@ window.addEvent('domready', function() {
 		     <!-- IF not S_USER_LOGGED_IN --><li <!-- IF IE_VERSION neq '6' --><!-- IF U_REGISTER_STYLE -->class="item4 active root"<!-- ELSE -->class="item4 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_REGISTER_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_REGISTER}"><span>{L_REGISTER}</span></a></li><!-- ENDIF -->
                     <li <!-- IF IE_VERSION neq '6' --><!-- IF U_LOGIN_LOGOUT_STYLE -->class="item5 active root"<!-- ELSE -->class="item5 root"<!-- ENDIF --><!-- ELSE --><!-- IF U_LOGIN_LOGOUT_STYLE -->id="current"<!-- ENDIF --><!-- ENDIF -->><a class="orphan item bullet" href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="l"><span>{L_LOGIN_LOGOUT}</span></a></li>
                 <!-- ENDIF -->
-				
+					
 
 
 
 
-
-				
+	<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
+	<li><form action="{U_SEARCH}" method="post" id="rokajaxsearch" class="light">
+         
+	  <div class="search">
+           <input name="keywords" id="roksearch_search_str" type="text"  title="{L_SEARCH_KEYWORDS}" class="inputbox" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
+          </div><input type="hidden" name="task" value="search" /> <input type="hidden" name="option" value="com_search" /> <input type="hidden" name="Itemid" value="54" />
+        
+	</form></li>  <!-- ENDIF -->		
 </ul>
                     <!-- ENDIF -->
 		           </div>
@@ -488,7 +481,7 @@ window.addEvent('domready', function() {
          </div>
         </div>
        </div>
-	   <div class="rt-grid-1 rt-alpha">
+	   <div class="rt-grid-1 rt-pull-8 rt-alpha">
         <div class="rt-block">
          <a href="<!-- IF QUASAR_LOGO_LINK -->{QUASAR_LOGO_LINK}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" id="rt-logo"></a>
         </div>
@@ -505,14 +498,14 @@ window.addEvent('domready', function() {
   </div>
   <div id="rt-feature">
    <div class="rt-container">
-    <div class="rt-grid-12 rt-alpha rt-omega"></div>
+    <!--<div class="rt-grid-12 rt-alpha rt-omega"></div>-->
     <div class="clear"></div>
    </div>
   </div>
-  <div style=" background: url({T_THEME_PATH}/images/headerdropshadow.png) repeat-x 0% 100%; height: 16px; margin-left:auto; margin-right: auto;">top</div>
+  <div style=" background: url({T_THEME_PATH}/images/headerdropshadow.png) repeat-x 0% 100%; height: 16px; margin-left:auto; margin-right: auto;"></div>
   <div id="rt-main-surround">
   
-  <div style="width:922px;  background-color: #e8e3d5; height: 1px;  margin-left:auto; margin-right: auto;">top</div>
+  <div style="width:922px;  background-color: #bbbbbb; height: 1px;  margin-left:auto; margin-right: auto;"></div>
    <div id="rt-main" class="mb8-sa4">
       
     <div class="rt-container">
