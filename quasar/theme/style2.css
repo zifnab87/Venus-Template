@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-header ul.menu li.active> a.newpms, #rt-header ul.menu li> a.newpms {color: #699714}
 
 /* Menu Dropdowns */
-#rt-header li ul {background: #222;border: 1px solid #333;}
+#rt-header li ul {background: url(images/backgrounds/style2/transparentblack.png); border: 1px solid #333;}
 
 /* Showcase */
 #rt-showcase {background: #0f0f0f url(images/backgrounds/style2/header-bg.png) 100% 0;color: #aaa;}
