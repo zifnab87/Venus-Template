@@ -6,7 +6,7 @@
  * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
  */
 /* Core */
-body {background: url(images/backgrounds/style2/circuitlight2.png) repeat;color: #333;}
+body {background: url(images/backgrounds/style2/circuitlight.jpg) repeat;color: #333;}
 a:hover {color: #000;}
 h1, h2, h3, h4, h5 {color: #333;}
 
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {color: #333;}
 
 
 /* Custom Headers */
-#custom-header1 {/*background: url(images/shadow.png) 95% bottom scroll no-repeat;*/}
+#custom-header1 {background: url(images/header-underlay.png) 95% bottom scroll no-repeat;}
 #custom-header2 {background: url(images/showcase-layer.png) repeat-x 0 40px scroll;}
 #custom-header3 {background: url(images/showcase-layer2.png) repeat-x 0 60px scroll;}
 
