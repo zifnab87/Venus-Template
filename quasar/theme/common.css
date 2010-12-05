@@ -263,9 +263,11 @@ text-decoration: none;
 	margin-bottom: 10px;
 }
 
-#page-body div.panel.searchbody, #page-body div.panel.ucpagreement, #page-body div.panel.memberlist, #page-body div.panel.login {
+#page-body div.panel.searchbody, #page-body div.panel.ucpagreement, #page-body div.panel.memberlist, #page-body div.panel.login, #page-body div.panel.marginfix {
 	margin-bottom: 0px;
 }
+
+
 
 
 
