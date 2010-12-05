@@ -17,8 +17,8 @@ function getmousepos(e) {
     mousex = e.pageX
   }  
   if (mousex < 0){mousex = 0}
-  var layer1 = document.getElementById("custom-header2");
-  var layer2 = document.getElementById("custom-header3");
+  var layer1 = document.getElementById("custom-header1");
+  var layer2 = document.getElementById("custom-header2");
   var screenwidth=1280;
   layer1.style.backgroundPosition=mousex/screenwidth*700+"% 40px";
   layer2.style.backgroundPosition=mousex/screenwidth*100+"% 60px";
