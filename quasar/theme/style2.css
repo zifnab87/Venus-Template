@@ -101,6 +101,8 @@ h1, h2, h3, h4, h5 {color: #333;}
 .footerdroptop {background: url(images/footerdropshadow.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
 .footerdropbottom {background: url(images/footerdropshadow2.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
 
+.headerdrop {background: url(images/headerdropshadow.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
+
 /* Typography */
 .readon {background: url(images/body/style2/readon-r.png) 100% 0 no-repeat;}
 .readon span, .readon .button {background: url(images/body/style2/readon-l.png) 0 0 no-repeat;color: #333;}
