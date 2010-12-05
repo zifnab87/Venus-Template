@@ -30,6 +30,8 @@ h1, h2, h3, h4, h5 {color: #333;}
 .backgroundlevel-high #rt-header4, .backgroundlevel-med #rt-header4 {}
 #rt-header .title span {color: #ccc;}
 
+.headerdrop {background: url(images/headerdropshadow.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
+
 /* Top Menu */
 #rt-header ul.menu li > a, #rt-header ul.menu li > .separator {color: #999;}
 #rt-header ul.menu li.active > a, #rt-header ul.menu li:hover > a, #rt-header ul.menu li.active > .separator, #rt-header ul.menu li:hover > .separator {background: url(images/menus/style2/menutab-r.png) 100% 0 no-repeat;color: #fff;}
@@ -68,6 +70,10 @@ h1, h2, h3, h4, h5 {color: #333;}
 #rt-main-surround .readon:hover span, #rt-main-surround .readon:hover .button {color: #000;}
 #form-login ul li a, #com-form-login ul li a, ul.rt-more-articles li a, .rt-section-list ul li a  {background-image: url(images/body/style2/arrows.png);background-repeat: no-repeat;}
 
+.custom-body-bg1 { background: url(images/rightshadow.png) repeat-y 0% 100%;} 
+.custom-body-bg2 { background: url(images/leftshadow.png) repeat-y 100% 100%; padding-left: 9px; padding-right: 9px;} 
+.custom-body-bg3 { background-color: #ffffff }
+
 /* Modules */
 .icon1 .module-icon, .icon2 .module-icon, .icon3 .module-icon, .icon4 .module-icon {background-image: url(images/body/style2/module-icons.png);background-repeat: no-repeat;}
 
@@ -101,7 +107,7 @@ h1, h2, h3, h4, h5 {color: #333;}
 .footerdroptop {background: url(images/footerdropshadow.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
 .footerdropbottom {background: url(images/footerdropshadow2.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
 
-.headerdrop {background: url(images/headerdropshadow.png) repeat-x scroll 0% 100% transparent; height: 16px; margin-left: auto; margin-right: auto;}
+
 
 /* Typography */
 .readon {background: url(images/body/style2/readon-r.png) 100% 0 no-repeat;}
