@@ -21,6 +21,6 @@ function getmousepos(e) {
   var layer2 = document.getElementById("custom-header2");
   var screenwidth=1280;
   layer1.style.backgroundPosition=mousex/screenwidth*700+"% 40px";
-  layer2.style.backgroundPosition=mousex/screenwidth*100+"% 60px";
+  layer2.style.backgroundPosition=mousex/screenwidth*100+"% 50px";
   return true
 }
