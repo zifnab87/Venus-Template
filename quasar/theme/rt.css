@@ -265,7 +265,7 @@ margin-top:10px;
 #rt-header {position: relative;z-index: 2;}
 #rt-header .rt-block {margin-bottom: 0;}
 #rt-header4 {padding: 5px 0;}
-#rt-logo {width: 240px;height: 83px;display: block;}
+#rt-logo {width: 240px;height: 86px;display: block; margin-bottom: 5px}
 
 /*Custom  Headers*/
 #custom-header2 {z-index: -1}
